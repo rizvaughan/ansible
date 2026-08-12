@@ -20,7 +20,7 @@
       add_host:
         name: "k3s_join_facts"
         k3s_token: "{{ node_token.content | b64decode | trim }}"
-        k3s_ip: "{{ 10.0.2.78 }}"
+        k3s_ip: "{{ 10.0.2.215 }}"
 
 - hosts: k3s_agent
   become: yes
